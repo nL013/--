@@ -1,0 +1,23 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+
+}
+
+.photo {
+    width: 300px;
+    
+}
+
+.Description {
+    display: block;
+}
+
+ul {
+    font-size: 18px;
+    transition: 200ms; 
+}
