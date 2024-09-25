@@ -1,200 +1,280 @@
-
-body { font-family:'TT Hoves', sans-serif;
-    color: #222;
-    
+body {
+  font-family: "TT Hoves", sans-serif;
+  color: #222;
 }
 
 section {
-    padding-left: calc(24px + (88 * ((100vw - 375px) / 905)));
+  padding-left: calc(24px + (88 * ((100vw - 375px) / 905)));
+  margin-bottom: calc(60px + (100 * ((100vw - 375px) / 905)));
 }
 
 section.hello {
-    padding-top: 40px;
-    background-image: url('../img/htms-css-js.png');
-    background-repeat: no-repeat;
-    background-position: top 20px right 40px;
-    background-size: 30%;
+  padding-top: 40px;
+  background-image: url("../img/htms-css-js.png");
+  background-repeat: no-repeat;
+  background-position: top 20px right 40px;
+  background-size: 30%;
 }
 
-.logo{
-    height: calc(30px + (40px - 30px) * ((100vw - 375px) / (1280px - 375px)));
+.logo {
+  height: calc(30px + (40px - 30px) * ((100vw - 375px) / (1280px - 375px)));
 }
 
-.courseInfo{
-    display: flex;
-    gap: 30;
-    flex-wrap: wrap;
-    margin-top:  calc(28px + (85px - 28px) * ((100vw - 375px) / (1280px - 375px)));
-    margin-bottom:  calc(48px + (76px - 28px) * ((100vw - 375px) / (1280px - 375px)));
+.courseInfo {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: calc(28px + (85px - 28px) * ((100vw - 375px) / (1280px - 375px)));
+  margin-bottom: calc(
+    48px + (76px - 28px) * ((100vw - 375px) / (1280px - 375px))
+  );
 }
 
-
-.courseData{
-    font-size: 21px;
-    line-height: 140%;    
+.courseData {
+  font-size: 21px;
+  line-height: 140%;
 }
 
 .courseData .value {
-font-weight: 700;
-
+  font-weight: 700;
 }
 
 h1 {
-    font-family: 'Chava', sans-serif;
-    font-size: calc(42px + (80px - 442px) * ((100vw - 375px) / (1280px - 375px)));
-    line-height: 110%;
+  font-family: "Chava", sans-serif;
+  font-size: calc(42px + (80px - 442px) * ((100vw - 375px) / (1280px - 375px)));
+  line-height: 110%;
 }
-
 
 p {
-margin-top: calc(20px + (40px - 20px) * ((100vw - 375px) / (1280px - 375px)));
-font-weight: 300px;
-line-height: 140%;
+  margin-top: calc(20px + (40px - 20px) * ((100vw - 375px) / (1280px - 375px)));
+  font-weight: 300px;
+  line-height: 140%;
 }
 
-
 .cta {
-    margin-top: 20px;
-    display: flex;
-    gap: 30px;
-    
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
 }
 
 button {
-    width: 320px;
-    padding: 20px 0px;
-    border-radius: 12px;
-    
+  width: 320px;
+  padding: 20px 0px;
+  border-radius: 12px;
 }
 
-button.purple{
-    background: #6E3ABA;
-    color: white;
-    border: 1px solid #6E3ABA;
-
+button.purple {
+  background: #6e3aba;
+  color: white;
+  border: 1px solid #6e3aba;
 }
 
 button.white {
-    background: white;
-    color: #6E3ABA;
-    border: 1px solid #6E3ABA;
+  background: white;
+  color: #6e3aba;
+  border: 1px solid #6e3aba;
 }
-
-@media (max-width: 375px) {
-    .cta {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    button {
-        width: 100%;
-    }
-}
-
-
 
 section.two {
-    margin-top: calc(60px + (100 * ((100vw - 375px) / 905)));
+  margin-top: calc(60px + (100 * ((100vw - 375px) / 905)));
 }
 
 .volume {
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 37.8px;
-    display: flex;
-
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 37.8px;
+  display: flex;
 }
 
-
-section.two h2 { 
-font-size: 58px;
-font-weight: 500;
-line-height: 68.32px;
-letter-spacing: 0.01em;
+section.two h2 {
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 68.32px;
+  letter-spacing: 0.01em;
 }
 
 .flexcont {
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    gap: 70;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 70;
+  flex-wrap: wrap;
 }
 
 .first {
-    width: 450px;   
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: Hug (450px)px;
-top: 226px;
-left: 120px;
-gap: 10px;
-opacity: 0px;
-
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: Hug (450px) px;
+  top: 226px;
+  left: 120px;
+  gap: 10px;
+  opacity: 0px;
 }
 .first img {
-    width: 210px;
-    height: 210px;
+  width: 210px;
+  height: 210px;
 }
-
 
 .saleContainer {
-    background-color: #6E3ABA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);    
+  background-color: #6e3aba;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
 }
 .saleContainer h3 {
-    color: white;
-    font-size: calc(2vw + 26.5px);
-    margin-bottom: calc(4.1vw + 4.7px);
-    text-align: center
+  color: white;
+  font-size: calc(2vw + 26.5px);
+  margin-bottom: calc(4.1vw + 4.7px);
+  text-align: center;
 }
 .time {
-    display: flex;
-    gap: calc(0.3vw - 8.2px);
-    margin-bottom: calc(4vw + 6px);
+  display: flex;
+  gap: calc(0.3vw - 8.2px);
+  margin-bottom: calc(4vw + 6px);
 }
-.date, .date2 {
-    font-size: calc(13.1vw + 5.7px);
-    font-family: "Chava";    
+.date,
+.date2 {
+  font-size: calc(13.1vw + 5.7px);
+  font-family: "Chava";
 }
-.colon::after{
-    content: ":";
+.colon::after {
+  content: ":";
 }
-.timeCard{
-    display: block;
-    text-align: center;
-    font-size: calc(1.9vw + 3px);
+.timeCard {
+  display: block;
+  text-align: center;
+  font-size: calc(1.9vw + 3px);
 }
 
 section.page5 {
-    padding-top: calc(11vw + 18.6px);
-    margin-bottom:calc(11vw + 18.6px)
+  padding-top: calc(11vw + 18.6px);
+  margin-bottom: calc(11vw + 18.6px);
 }
-.page5 h2 {    
-    font-size: calc(2.7vw + 24.1px);
-    font-weight: 500;
-     
+.page5 h2 {
+  font-size: calc(2.7vw + 24.1px);
+  font-weight: 500;
 }
-.infoText {    
-    display: flex;    
-    flex-wrap: wrap;
-    gap: 52px 120px;
-    margin-top: calc(6.6vw + 5.1px);    
+.infoText {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px 120px;
+  margin-top: calc(6.6vw + 5.1px);
 }
 .infoText_box {
-    width: calc(8vw + 298.2px);    
-    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
-    line-height: 140%;
-    margin-right:auto;
+  width: calc(8vw + 298.2px);
+  font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+  line-height: 140%;
+  margin-right: auto;
 }
-.boxName {    
-    font-weight: 600;
+.boxName {
+  font-weight: 600;
 }
-.boxInfo {    
-    font-weight: 400;
-    margin-top: calc(10px + (20 - 10) * ((100vw - 375px) / (1280 - 375)));  
+.boxInfo {
+  font-weight: 400;
+  margin-top: calc(10px + (20 - 10) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.infocontainer {
+  display: flex;
+  gap: calc(20px + (51 - 20) * ((100vw - 375px) / (1280 - 375)));
+  flex-wrap: wrap;
+}
+
+h5 {
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 68.32px;
+  letter-spacing: 0.01em;
+}
+.infocard {
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+.infocard img {
+  width: 100%;
+}
+.infobox {
+  flex-basis: 300px;
+  flex-grow: 3;
+}
+
+h4 {
+  font-size: calc(38px + (48 - 38) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: 700;
+  line-height: 120%;
+}
+.legendskills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: calc(30px + (40 - 30) * ((100vw - 375px) / (1280 - 375)));
+  column-gap: calc(10px + (90 - 10) * ((100vw - 375px) / (1280 - 375)));
+  margin-top: calc(90px + (40 - 90) * ((100vw - 375px) / (1280 - 375)));
+}
+.skill img {
+  width: 36px;
+}
+.skill span {
+  display: block;
+  margin-top: 10px;
+  font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+  line-height: 140%;
+}
+
+.universe {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  width: 430px;
+  height: 300px;
+  top: 13px;
+  left: 121px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.uppertext {
+  text-transform: uppercase;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 68.32px;
+  letter-spacing: 0.01em;
+}
+
+.dreams {
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 68.32px;
+}
+
+.salaryHeader {
+  width: calc(328px + (729 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.salaryInfo {
+  font-size: 27px;
+  font-weight: 400;
+  width: calc(328px + (876 - 328) * ((100vw - 376px) / (1280 - 375)));
+  margin-top: calc(2.2vw + 11.7px);
+}
+
+.vacanciesImg {
+  margin-top: calc(1.8vw + 13.4px);
+}
+
+.vacanciesImg img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 375px) {
+  .cta {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
 }
