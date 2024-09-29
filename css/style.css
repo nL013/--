@@ -259,6 +259,175 @@ h4 {
   line-height: 116%;
   width: 100%;
 }
+.frameBox {
+  border: 2px solid black;
+  padding: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)))
+    calc(20px + (52 - 20) * ((100vw - 375px) / (1280 - 375)))
+    calc(23px + (35 - 23) * ((100vw - 375px) / (1280 - 375)));
+  position: relative;
+}
+#corner {
+  width: calc(40px + (140 - 40) * ((100vw - 375px) / (1280 - 375)));
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+.frameBox h2 {
+  margin: 0;
+}
+.lessons {
+  margin-top: calc(24px + (40 - 24) * ((100vw - 375px) / (1280 - 375)));
+  margin-bottom: calc(23px + (34 - 23) * ((100vw - 375px) / (1280 - 375)));
+  list-style-type: none;
+}
+.lessons li {
+  border-bottom: 1px solid #a1a1a1;
+  padding: 24px 0;
+  font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+}
+.lessons li:first-child {
+  padding-top: 0;
+}
+.frame button {
+  display: block;
+  margin: 0 auto;
+}
+.mobile {
+  display: none !important;
+}
+
+.feadbacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.page10 h2 {
+  margin-bottom: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+.feadback {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(328px + (335 - 328) * ((100vw - 375px) / (1280 - 375)));
+  padding: 50px 20px 40px;
+  border-radius: 12px;
+  background: #f0f7fd;
+}
+.feadbackText p {
+  margin-top: 8px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 29.4px;
+  width: 100%;
+}
+.feadbackText img {
+  width: 38px;
+}
+.student {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+}
+.student img {
+  width: 72px;
+  border-radius: 50%;
+}
+.studentInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp {
+  background-color: #f0f7fd;
+  width: calc(326px + (800 - 326) * ((100vw - 375px) / (1200 - 375)));
+  height: 80vh;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 320px;
+}
+
+.form h4 {
+  text-transform: uppercase;
+  font-size: 26px;
+  text-align: center;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+
+  border: 0;
+  border-bottom: 1px solid #a1a1a1;
+  outline: 0;
+  background: transparent;
+
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px 0;
+}
+
+.form button {
+  margin-top: 30px;
+}
+
+.thankYouPage {
+  background-color: #f0f7fd;
+  width: calc(326px + (800 - 326) * ((100vw - 375px) / (1200 - 375)));
+  height: 80vh;
+  border-radius: 12px;
+
+  color: white;
+
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.thankYouPage h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .mobile {
+    display: block !important;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+
+  .frame buttons {
+    margin-top: 30px;
+  }
+
+  .lessons li:last-child {
+    border: 0;
+    padding-bottom: 0;
+  }
+}
 
 @media (((min-width: 370px) and (max-width: 750px))) {
   .diplomBox {
@@ -267,23 +436,4 @@ h4 {
   .column_1 {
     grid-row: 2 / 3;
   }
-}
-
-.frameBox {
-  border: 2px solid black;
-  padding: calc(40px + (80px - 40px) * ((100vw - 375px) / (1280px - 375px)))
-    calc(20px + (52px - 20px) * ((100vw - 375px) / (1280px - 375px)))
-    calc(23px + (35px - 23px) * ((100vw - 375px) / (1280px - 375px)));
-}
-
-.frameBox h2 {
-  margin: 0;
-}
-
-.lessons {
-  margin-top: calc(24px + (40px - 24px) * ((100vw - 375px) / (1280px - 375px)));
-  margin-bottom: calc(
-    23px + (34px - 23x) * ((100vw - 375px) / (1280px - 375px))
-  );
-  font-size: calc(16px + (21px - 16px) * ((100vw - 375px) / (1280px - 375px)));
 }
