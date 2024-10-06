@@ -43,31 +43,58 @@ setInterval(sale, 1000);
 
 let wrapper = document.querySelector(".wrapper");
 let popUp = document.querySelector(".wrapper .popUp");
-let type = document.querySelector(".wrapper .thankYouPage");
-let btn = document.querySelectorAll("section button");
+let typ = document.querySelector(".wrapper .thankYouPage");
+let btns = document.querySelectorAll("section button");
+let formBtn = document.querySelector(".form button");
+let username = document.getElementsByName("username")[0];
+let userphone = document.getElementsByName("userphone")[0];
 
-let formBtn = document.querySelector(".from button");
-let username = document.getElementsByName("username");
-let userphone = document.getElementsByName("userphone");
-
-btn.forEach((btn) => {
+btns.forEach((btn) => {
   btn.addEventListener("click", showpopUp);
 });
 
 wrapper.addEventListener("click", hidepopUp);
 
 function showpopUp() {
+  username.value = "";
+  userphone.value = "";
+
   wrapper.style.display = "flex";
   popUp.style.display = "flex";
-  type.style.display = "none";
+  typ.style.display = "none";
 }
 
-function hidepopUp(event) {
+function hidepopUp() {
   let elem = event.target;
-  let thanks = document.querySelector(".thankYouPage");
-  if (elem === wrapper) {
+  if (elem == wrapper) {
     wrapper.style.display = "none";
-    thanks.style.display = "flex";
   }
 }
 
+formBtn.addEventListener("click", sendForm);
+function sendForm() {
+  event.preventDefault();
+  if (username.value.length > 1) {
+    if (userphone.value.length == 13) {
+      showTYP();
+    } else {
+      console.log("неверный номер");
+    }
+  } else {
+    console.log("короткое имя");
+  }
+}
+
+function showTYP() {
+  popUp.style.display = "none";
+  typ.style.display = "flex";
+}
+
+const input = document.querySelector(".phone");
+window.intlTelInput(input, {
+  initialCountry: "uz",
+  separateDialCode: true,
+  autoPlaceholder: "off",
+  utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
